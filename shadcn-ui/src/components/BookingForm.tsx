@@ -11,27 +11,82 @@ import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover
 import { CalendarIcon, Users, Package, Plane, Phone, Mail, MapPin } from 'lucide-react';
 import { format } from 'date-fns';
 import { cn } from '@/lib/utils';
-import { useToast } from '@/hooks/use-toast';
+import { toast } from 'sonner';
 
 export default function BookingForm() {
   const [passengerDate, setPassengerDate] = useState<Date>();
   const [cargoDate, setCargoDate] = useState<Date>();
-  const { toast } = useToast();
+  const [passengerDeparture, setPassengerDeparture] = useState('');
+  const [passengerDestination, setPassengerDestination] = useState('');
+  const [passengerCount, setPassengerCount] = useState('');
+  const [cargoDeparture, setCargoDeparture] = useState('');
+  const [cargoDestination, setCargoDestination] = useState('');
+  const [cargoType, setCargoType] = useState('');
 
-  const handlePassengerSubmit = (e: React.FormEvent) => {
+  const handlePassengerSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    toast({
-      title: "Booking Request Submitted",
+    
+    // Validate required fields
+    if (!passengerDate) {
+      toast.error('Please select a travel date');
+      return;
+    }
+    if (!passengerDeparture) {
+      toast.error('Please select a departure location');
+      return;
+    }
+    if (!passengerDestination) {
+      toast.error('Please select a destination');
+      return;
+    }
+    if (!passengerCount) {
+      toast.error('Please select number of passengers');
+      return;
+    }
+
+    toast.success('Booking Request Submitted', {
       description: "We'll contact you within 24 hours to confirm your passenger charter booking.",
     });
+    
+    // Reset form
+    e.currentTarget.reset();
+    setPassengerDate(undefined);
+    setPassengerDeparture('');
+    setPassengerDestination('');
+    setPassengerCount('');
   };
 
-  const handleCargoSubmit = (e: React.FormEvent) => {
+  const handleCargoSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    toast({
-      title: "Cargo Request Submitted", 
+    
+    // Validate required fields
+    if (!cargoDate) {
+      toast.error('Please select a preferred date');
+      return;
+    }
+    if (!cargoDeparture) {
+      toast.error('Please select an origin location');
+      return;
+    }
+    if (!cargoDestination) {
+      toast.error('Please select a destination');
+      return;
+    }
+    if (!cargoType) {
+      toast.error('Please select cargo type');
+      return;
+    }
+
+    toast.success('Cargo Request Submitted', {
       description: "We'll contact you within 24 hours to confirm your cargo transport booking.",
     });
+    
+    // Reset form
+    e.currentTarget.reset();
+    setCargoDate(undefined);
+    setCargoDeparture('');
+    setCargoDestination('');
+    setCargoType('');
   };
 
   return (
@@ -92,7 +147,7 @@ export default function BookingForm() {
                       <div className="grid md:grid-cols-2 gap-4">
                         <div>
                           <Label htmlFor="departure">Departure Location *</Label>
-                          <Select required>
+                          <Select value={passengerDeparture} onValueChange={setPassengerDeparture} required>
                             <SelectTrigger>
                               <SelectValue placeholder="Select departure city" />
                             </SelectTrigger>
@@ -108,7 +163,7 @@ export default function BookingForm() {
                         </div>
                         <div>
                           <Label htmlFor="destination">Destination *</Label>
-                          <Select required>
+                          <Select value={passengerDestination} onValueChange={setPassengerDestination} required>
                             <SelectTrigger>
                               <SelectValue placeholder="Select destination" />
                             </SelectTrigger>
@@ -133,6 +188,7 @@ export default function BookingForm() {
                           <Popover>
                             <PopoverTrigger asChild>
                               <Button
+                                type="button"
                                 variant="outline"
                                 className={cn(
                                   "w-full justify-start text-left font-normal",
@@ -155,7 +211,7 @@ export default function BookingForm() {
                         </div>
                         <div>
                           <Label htmlFor="passengers">Number of Passengers *</Label>
-                          <Select required>
+                          <Select value={passengerCount} onValueChange={setPassengerCount} required>
                             <SelectTrigger>
                               <SelectValue placeholder="Select passengers" />
                             </SelectTrigger>
@@ -227,7 +283,7 @@ export default function BookingForm() {
                       <div className="grid md:grid-cols-2 gap-4">
                         <div>
                           <Label htmlFor="cargo-origin">Origin Location *</Label>
-                          <Select required>
+                          <Select value={cargoDeparture} onValueChange={setCargoDeparture} required>
                             <SelectTrigger>
                               <SelectValue placeholder="Select origin" />
                             </SelectTrigger>
@@ -243,7 +299,7 @@ export default function BookingForm() {
                         </div>
                         <div>
                           <Label htmlFor="cargo-destination">Destination *</Label>
-                          <Select required>
+                          <Select value={cargoDestination} onValueChange={setCargoDestination} required>
                             <SelectTrigger>
                               <SelectValue placeholder="Select destination" />
                             </SelectTrigger>
@@ -267,6 +323,7 @@ export default function BookingForm() {
                           <Popover>
                             <PopoverTrigger asChild>
                               <Button
+                                type="button"
                                 variant="outline"
                                 className={cn(
                                   "w-full justify-start text-left font-normal",
@@ -295,7 +352,7 @@ export default function BookingForm() {
 
                       <div>
                         <Label htmlFor="cargo-type">Cargo Type *</Label>
-                        <Select required>
+                        <Select value={cargoType} onValueChange={setCargoType} required>
                           <SelectTrigger>
                             <SelectValue placeholder="Select cargo type" />
                           </SelectTrigger>
