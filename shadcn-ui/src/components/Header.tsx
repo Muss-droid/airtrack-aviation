@@ -1,9 +1,16 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Menu, X, Plane } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const scrollToBooking = () => {
+    const bookingSection = document.getElementById('booking');
+    if (bookingSection) {
+      bookingSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <header className="bg-white shadow-lg sticky top-0 z-50">
@@ -12,7 +19,7 @@ export default function Header() {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
-              src="/assets/airtrack new logo.png" 
+              src="/assets/airtrack new /images/Aviation.jpg" 
               alt="Airtrack Aviation" 
               className="h-12 w-auto"
             />
@@ -28,7 +35,10 @@ export default function Header() {
             <a href="#services" className="text-gray-700 hover:text-blue-600 font-medium">Services</a>
             <a href="#about" className="text-gray-700 hover:text-blue-600 font-medium">About</a>
             <a href="#contact" className="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
-            <Button className="bg-orange-500 hover:bg-orange-600 text-white">
+            <Button 
+              className="bg-orange-500 hover:bg-orange-600 text-white"
+              onClick={scrollToBooking}
+            >
               Book Now
             </Button>
           </nav>
@@ -53,7 +63,10 @@ export default function Header() {
               <a href="#services" className="text-gray-700 hover:text-blue-600 font-medium">Services</a>
               <a href="#about" className="text-gray-700 hover:text-blue-600 font-medium">About</a>
               <a href="#contact" className="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
-              <Button className="bg-orange-500 hover:bg-orange-600 text-white w-fit">
+              <Button 
+                className="bg-orange-500 hover:bg-orange-600 text-white w-fit"
+                onClick={scrollToBooking}
+              >
                 Book Now
               </Button>
             </nav>
