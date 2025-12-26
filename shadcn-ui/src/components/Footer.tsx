@@ -51,13 +51,16 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
             <div className="space-y-3 text-gray-300">
-              <div className="flex items-center space-x-2">
-                <Phone className="h-4 w-4 text-orange-500" />
-                <span>+211 XXX XXX XXX</span>
+              <div className="flex items-start space-x-2">
+                <Phone className="h-4 w-4 text-orange-500 mt-1" />
+                <div>
+                  <p>+211 910 004 005</p>
+                  <p>+211 929 667 788</p>
+                </div>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-orange-500" />
-                <span>info@airtrack.ss</span>
+                <span>airtrackaviation@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-orange-500" />

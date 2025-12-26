@@ -338,18 +338,19 @@ export default function BookingForm() {
                 <CardDescription>Get in touch with our team</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <Phone className="h-5 w-5 text-blue-600" />
+                <div className="flex items-start space-x-3">
+                  <Phone className="h-5 w-5 text-blue-600 mt-1" />
                   <div>
                     <p className="font-medium">Phone</p>
-                    <p className="text-sm text-gray-600">+211 XXX XXX XXX</p>
+                    <p className="text-sm text-gray-600">+211 910 004 005</p>
+                    <p className="text-sm text-gray-600">+211 929 667 788</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-blue-600" />
                   <div>
                     <p className="font-medium">Email</p>
-                    <p className="text-sm text-gray-600">info@airtrack.ss</p>
+                    <p className="text-sm text-gray-600">airtrackaviation@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
