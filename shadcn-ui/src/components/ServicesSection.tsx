@@ -8,7 +8,7 @@ export default function ServicesSection() {
       icon: <Users className="h-12 w-12 text-blue-600" />,
       title: "Passenger Charter",
       description: "Comfortable and safe passenger transport for domestic and international routes. Experience premium aviation services with our experienced crew.",
-      image: "/images/photo1767089306.jpg",
+      image: "/assets/passenger-charter.png",
       features: ["Experienced Pilots", "Comfortable Seating", "Safety First", "Flexible Scheduling"]
     },
     {
@@ -22,14 +22,14 @@ export default function ServicesSection() {
       icon: <Heart className="h-12 w-12 text-red-500" />,
       title: "Medical Transport",
       description: "Emergency medical evacuation and transport services. Equipped aircraft for medical emergencies with professional medical support.",
-      image: "/images/photo1767089306.jpg",
+      image: "/images/photo1767089564.jpg",
       features: ["Emergency Response", "Medical Equipment", "Trained Staff", "24/7 Availability"]
     },
     {
       icon: <Plane className="h-12 w-12 text-green-600" />,
       title: "Consultation Services",
       description: "Aviation consulting and advisory services. Expert guidance for aviation operations, safety protocols, and regulatory compliance.",
-      image: "/images/photo1767089307.jpg",
+      image: "/images/photo1767089564.jpg",
       features: ["Expert Advice", "Safety Protocols", "Regulatory Compliance", "Operational Support"]
     }
   ];
