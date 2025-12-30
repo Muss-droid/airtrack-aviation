@@ -8,28 +8,28 @@ export default function ServicesSection() {
       icon: <Users className="h-12 w-12 text-blue-600" />,
       title: "Passenger Charter",
       description: "Comfortable and safe passenger transport for domestic and international routes. Experience premium aviation services with our experienced crew.",
-      image: "/assets/airtrack take /images/photo1767088767.jpg",
+      image: "/images/PassengerTransport.jpg",
       features: ["Experienced Pilots", "Comfortable Seating", "Safety First", "Flexible Scheduling"]
     },
     {
       icon: <Package className="h-12 w-12 text-orange-500" />,
       title: "Cargo Services",
       description: "Reliable cargo transport solutions for businesses and organizations. Secure handling of your valuable goods with timely delivery.",
-      image: "/assets/airtrack /images/photo1767088767.jpg",
+      image: "/images/photo1767089084.jpg",
       features: ["Secure Transport", "Timely Delivery", "Various Cargo Types", "Tracking Available"]
     },
     {
       icon: <Heart className="h-12 w-12 text-red-500" />,
       title: "Medical Transport",
       description: "Emergency medical evacuation and transport services. Equipped aircraft for medical emergencies with professional medical support.",
-      image: "/assets/airtrack /images/photo1767088768.jpg",
+      image: "/images/MedicalTransport.jpg",
       features: ["Emergency Response", "Medical Equipment", "Trained Staff", "24/7 Availability"]
     },
     {
       icon: <Plane className="h-12 w-12 text-green-600" />,
       title: "Consultation Services",
       description: "Aviation consulting and advisory services. Expert guidance for aviation operations, safety protocols, and regulatory compliance.",
-      image: "/assets/airtrack /images/photo1767088767.jpg",
+      image: "/images/AviationConsulting.jpg",
       features: ["Expert Advice", "Safety Protocols", "Regulatory Compliance", "Operational Support"]
     }
   ];
