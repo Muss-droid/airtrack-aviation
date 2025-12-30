@@ -22,14 +22,14 @@ export default function ServicesSection() {
       icon: <Heart className="h-12 w-12 text-red-500" />,
       title: "Medical Transport",
       description: "Emergency medical evacuation and transport services. Equipped aircraft for medical emergencies with professional medical support.",
-      image: "/images/MedicalTransport.jpg",
+      image: "/assets/airtrack medical.png",
       features: ["Emergency Response", "Medical Equipment", "Trained Staff", "24/7 Availability"]
     },
     {
       icon: <Plane className="h-12 w-12 text-green-600" />,
       title: "Consultation Services",
       description: "Aviation consulting and advisory services. Expert guidance for aviation operations, safety protocols, and regulatory compliance.",
-      image: "/images/AviationConsulting.jpg",
+      image: "/assets/airtrack consultation.jpg",
       features: ["Expert Advice", "Safety Protocols", "Regulatory Compliance", "Operational Support"]
     }
   ];
