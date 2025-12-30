@@ -436,7 +436,7 @@ export default function BookingForm() {
                   </div>
                   <div className="flex justify-between">
                     <span>Sunday</span>
-                    <span>Emergency Only</span>
+                    <span className="bg-[#00000000] mt-[0px] mr-[0px] mb-[0px] ml-[0px] pt-[0px] pr-[0px] pb-[0px] pl-[0px] font-normal opacity-100 text-[#020817]" >8:00 AM - 6:00 PM</span>
                   </div>
                   <div className="mt-4 p-3 bg-orange-50 rounded-lg">
                     <p className="text-sm text-orange-800">
@@ -452,3 +452,4 @@ export default function BookingForm() {
     </section>
   );
 }
+
