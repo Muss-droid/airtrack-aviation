@@ -1,4 +1,4 @@
-import { Plane, Phone, Mail, MapPin, Facebook, Twitter, Instagram } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, Twitter, Instagram } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
               <img 
-                src="https://mgx-backend-cdn.metadl.com/generate/images/582749/2025-12-30/b483215c-3871-44ad-91b2-c8cb69b03db3.png" 
+                src="https://mgx-backend-cdn.metadl.com/generate/images/582749/2025-12-30/63c9a87b-b43c-49bb-ab61-ea580add5325.png" 
                 alt="AIRTRACK AVIATION" 
                 className="h-12 w-auto"
               />

@@ -19,7 +19,7 @@ export default function Header() {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
-              src="/assets/airtrack new /images/photo1767087120.jpg" 
+              src="/assets/airtrack-logo.png" 
               alt="AIRTRACK AVIATION" 
               className="h-12 w-auto"
             />
