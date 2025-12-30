@@ -22,7 +22,7 @@ export default function HeroSection() {
           <div className="flex items-center justify-center mb-6">
             <Plane className="h-16 w-16 text-orange-500 mr-4" />
             <div>
-              <h1 className="text-5xl md:text-7xl font-bold mb-4">
+              <h1 className="text-5xl md:text-7xl bg-[#00000000] mt-[0px] mr-[0px] mb-[16px] ml-[0px] pt-[0px] pr-[0px] pb-[0px] pl-[0px] font-bold text-center opacity-100 text-[#FFFFFF]">
                 <span className="text-orange-500">Air</span>Track Aviation
               </h1>
               <p className="text-xl md:text-2xl text-blue-200 font-light">

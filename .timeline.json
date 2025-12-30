@@ -40,5 +40,6 @@
     "config_path": ".mgx/config.yaml",
     "timeline_index": 16
   },
-  "last_build_failed": false
+  "last_build_failed": false,
+  "last_user_recipient": null
 }
