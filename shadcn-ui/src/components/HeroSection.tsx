@@ -12,7 +12,8 @@ export default function HeroSection() {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/Airtrack background.png')`
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/hero-background.png')`,
+          backgroundPosition: 'center 40%'
         }}
       />
       
@@ -22,8 +23,8 @@ export default function HeroSection() {
           <div className="flex items-center justify-center mb-6">
             <Plane className="h-16 w-16 text-orange-500 mr-4" />
             <div>
-              <h1 className="text-5xl md:text-7xl font-bold mb-4">
-                <span className="text-orange-500">Air</span>Track Aviation
+              <h1 className="text-5xl md:text-7xl font-bold mb-4 text-white">
+                AIRTRACK AVIATION
               </h1>
               <p className="text-xl md:text-2xl text-blue-200 font-light">
                 Your Trusted Aviation Partner in South Sudan

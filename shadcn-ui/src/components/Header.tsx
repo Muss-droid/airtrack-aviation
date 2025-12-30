@@ -19,12 +19,12 @@ export default function Header() {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
-              src="/assets/airtrack new /images/Aviation.jpg" 
-              alt="Airtrack Aviation" 
+              src="/assets/airtrack-logo.png" 
+              alt="AIRTRACK AVIATION" 
               className="h-12 w-auto"
             />
             <div className="hidden sm:block">
-              <h1 className="text-xl font-bold text-blue-900">Airtrack Aviation</h1>
+              <h1 className="text-xl font-bold text-blue-900">AIRTRACK AVIATION</h1>
               <p className="text-sm text-gray-600">South Sudan</p>
             </div>
           </div>

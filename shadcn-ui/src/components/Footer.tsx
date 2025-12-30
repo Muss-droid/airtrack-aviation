@@ -1,4 +1,4 @@
-import { Plane, Phone, Mail, MapPin, Facebook, Twitter, Instagram } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, Twitter, Instagram } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -9,12 +9,12 @@ export default function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
               <img 
-                src="/assets/airtrack new logo.png" 
-                alt="Airtrack Aviation" 
+                src="/assets/airtrack-logo.png" 
+                alt="AIRTRACK AVIATION" 
                 className="h-12 w-auto"
               />
               <div>
-                <h3 className="text-2xl font-bold text-orange-500">Airtrack Aviation</h3>
+                <h3 className="text-2xl font-bold text-orange-500">AIRTRACK AVIATION</h3>
                 <p className="text-gray-400">South Sudan</p>
               </div>
             </div>
@@ -74,7 +74,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 Airtrack Aviation Limited. All rights reserved.
+              © 2024 AIRTRACK AVIATION Limited. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-orange-500 text-sm transition-colors">Privacy Policy</a>

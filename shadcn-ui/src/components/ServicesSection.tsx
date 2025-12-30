@@ -8,14 +8,14 @@ export default function ServicesSection() {
       icon: <Users className="h-12 w-12 text-blue-600" />,
       title: "Passenger Charter",
       description: "Comfortable and safe passenger transport for domestic and international routes. Experience premium aviation services with our experienced crew.",
-      image: "/assets/airtrack take off.jpg",
+      image: "/assets/passenger-charter.png",
       features: ["Experienced Pilots", "Comfortable Seating", "Safety First", "Flexible Scheduling"]
     },
     {
       icon: <Package className="h-12 w-12 text-orange-500" />,
       title: "Cargo Services",
       description: "Reliable cargo transport solutions for businesses and organizations. Secure handling of your valuable goods with timely delivery.",
-      image: "/assets/airtrack cargo.jpg",
+      image: "/assets/cargo-services.png",
       features: ["Secure Transport", "Timely Delivery", "Various Cargo Types", "Tracking Available"]
     },
     {
@@ -91,16 +91,18 @@ export default function ServicesSection() {
           ))}
         </div>
 
-        {/* Service Overview Image */}
+        {/* Why Choose Section with New Background */}
         <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-          <img 
-            src="/assets/airtrack service.png" 
-            alt="Airtrack Aviation Services"
-            className="w-full h-64 md:h-96 object-cover"
+          <div 
+            className="w-full h-64 md:h-96 bg-cover bg-center"
+            style={{
+              backgroundImage: `url('/assets/why-choose-background.png')`,
+              backgroundPosition: 'center 35%'
+            }}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-transparent flex items-center">
             <div className="max-w-2xl mx-auto px-8 text-white">
-              <h3 className="text-3xl font-bold mb-4">Why Choose Airtrack Aviation?</h3>
+              <h3 className="text-3xl font-bold mb-4">Why Choose AIRTRACK AVIATION?</h3>
               <p className="text-lg mb-6">
                 With years of experience in South Sudan's aviation industry, we provide 
                 reliable, safe, and professional services that you can trust.
